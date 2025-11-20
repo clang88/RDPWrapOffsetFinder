@@ -4,7 +4,8 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 import datetime
 
-LOG_FILENAME = os.path.join(os.path.dirname(os.path.abspath(__file__)), "run_offset_finder.log")
+WORKDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)))
+LOG_FILENAME = os.path.join(WORKDIR, "run_offset_finder.log")
 INI_PATH = r"C:\\Program Files\\RDP Wrapper\\rdpwrap.ini"
 
 def setup_logger():
@@ -20,7 +21,7 @@ def setup_logger():
 
 def main():
     logger = setup_logger()
-    offset_finder_path = os.path.abspath("64bit\\RDPWrapOffsetFinder_nosymbol.exe")
+    offset_finder_path = os.path.abspath(os.path.join(WORKDIR, "64bit\\RDPWrapOffsetFinder_nosymbol.exe"))
     try:
         result = subprocess.run(offset_finder_path, capture_output=True, text=True, check=False)
         stdout = result.stdout.strip()

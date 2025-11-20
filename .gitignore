@@ -3,3 +3,8 @@ x64/
 [Rr]elease/
 [Dd]ebug/
 *.dll
+dist/
+build/
+run_offset_finder.exe
+run_offset_finder.spec
+run_offset_finder.log

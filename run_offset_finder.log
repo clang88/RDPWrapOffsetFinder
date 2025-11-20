@@ -24,3 +24,11 @@ bMultimonAllowed.x64=125F6C
 lMaxUserSessions.x64=125F58
 ulMaxDebugSessions.x64=125F74
 bInitialized.x64=125F50
+2025-11-20 19:55:44,422 ERROR: Unexpected error: [WinError 2] Das System kann die angegebene Datei nicht finden
+2025-11-20 20:00:47,182 ERROR: Unexpected error: [WinError 2] Das System kann die angegebene Datei nicht finden
+2025-11-20 20:02:20,951 ERROR: Unexpected error: [WinError 2] Das System kann die angegebene Datei nicht finden
+2025-11-20 20:03:47,359 INFO: Current offset already in ini
+2025-11-20 21:01:24,381 INFO: Current offset already in ini
+2025-11-20 21:03:15,673 INFO: Current offset already in ini
+2025-11-20 21:03:37,552 INFO: Current offset already in ini
+2025-11-20 21:05:19,605 INFO: Current offset already in ini
