@@ -6,6 +6,8 @@ Automatically find offsets needed by RDPWrap and generate rdpwrap.ini
 
 Pass the path of termsrv.dll as command line argument. If not provided, default to current system's termsrv.dll in System32 directory.
 
+If you want to run the utility automatically after an update, just use task scheduler to run the python script; it will automatically try to fetch the new offset and add the offset to the ini if not already present.
+
 ## Compile
 
 This project depends on [zydis](https://github.com/zyantific/zydis), you needed to build zydis first.
